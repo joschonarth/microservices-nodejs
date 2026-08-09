@@ -6,6 +6,10 @@ import {
   validatorCompiler,
   type ZodTypeProvider,
 } from "fastify-type-provider-zod";
+import { channels } from "../broker/channels/index.ts";
+import { db } from "../db/client.ts";
+import { randomUUID } from "node:crypto";
+import { schema } from "../db/schema/index.ts";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -31,6 +35,19 @@ app.post(
     const { amount } = request.body;
 
     console.log("Creating an order with amount", amount);
+
+    channels.orders.sendToQueue(
+      "orders",
+      Buffer.from(JSON.stringify({ amount })),
+    );
+
+    const orderId = randomUUID();
+
+    await db.insert(schema.orders).values({
+      id: orderId,
+      customerId: "B9176D35-7276-4255-A323-D825CAEE03B5",
+      amount,
+    });
 
     return reply.status(201).send();
   },
