@@ -1,0 +1,9 @@
+@baseUrl = http://localhost:3333
+
+### Create order
+POST {{baseUrl}}/orders
+Content-Type: application/json
+
+{
+  "amount": 5000
+}
