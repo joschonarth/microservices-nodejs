@@ -24,10 +24,12 @@ Este projeto é um sistema distribuído construído do zero, composto por dois m
 ## 🛠️ Tecnologias
 
 - 🟩 **[Node.js](https://nodejs.org/)** — Ambiente de execução JavaScript utilizado em ambos os microsserviços.
+- 🟦 **[TypeScript](https://www.typescriptlang.org/)** — Tipagem estática e segurança em tempo de desenvolvimento.
 - 🔥 **[Fastify](https://fastify.dev/)** — Framework web utilizado na construção das APIs dos serviços.
 - 🐇 **[RabbitMQ](https://www.rabbitmq.com/)** — Message broker para comunicação assíncrona entre os serviços.
 - 🐘 **[PostgreSQL](https://www.postgresql.org/)** — Banco de dados relacional utilizado pelos serviços.
 - 🐳 **[Docker](https://www.docker.com/)** — Containerização dos serviços e dependências para desenvolvimento local.
+- 🗃️ **[Drizzle ORM](https://orm.drizzle.team/)** — ORM leve e type-safe para acesso ao banco de dados.
 - 🦍 **[Kong](https://konghq.com/products/kong-gateway)** — API Gateway responsável pelo roteamento, autenticação e gerenciamento de tráfego.
 - ☁️ **[AWS](https://aws.amazon.com/)** — Provedor de nuvem utilizado para o deploy da aplicação.
 - 🏗️ **[Pulumi](https://www.pulumi.com/)** — Infraestrutura como código para provisionamento e gerenciamento dos recursos na AWS.
