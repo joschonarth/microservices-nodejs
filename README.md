@@ -17,9 +17,7 @@ _Sistema distribuído com microsserviços, mensageria, observabilidade e infraes
 
 ## 📃 Sobre
 
-Este projeto é um sistema distribuído construído do zero, focado na aplicação prática de conceitos fundamentais de arquitetura de microsserviços, mensageria, observabilidade e infraestrutura como código — indo além do simples "fazer funcionar" e explorando os desafios reais de sistemas distribuídos, como latência, consistência de dados e idempotência.
-
-O sistema é composto por dois microsserviços — **pedidos** e **faturas** — que se comunicam de forma assíncrona via mensageria, expostos através de um API Gateway e implantados na AWS usando infraestrutura como código.
+Este projeto é um sistema distribuído construído do zero, composto por dois microsserviços — **pedidos** e **faturas** — que se comunicam de forma assíncrona via mensageria, expostos através de um API Gateway e implantados na AWS usando infraestrutura como código. O foco está na aplicação prática de conceitos fundamentais de arquitetura de microsserviços, observabilidade e infraestrutura como código, explorando desafios reais de sistemas distribuídos como latência, consistência de dados e idempotência.
 
 ---
 
